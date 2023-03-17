@@ -108,6 +108,7 @@
                     </ul>
                 </div>
         </div>
+    
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -127,25 +128,39 @@
                     Visual Results
                 </h3>
 
-                <div class="video-compare-container">
-                    <video class="video" id="toaster_mesh" loop playsinline autoPlay muted src="video/toaster_mesh_NeuS_our.mp4" onplay="resizeAndPlay(this)"></video>
-                    <canvas height=0 class="videoMerge" id="toaster_meshMerge"></canvas>
-                </div>
+                <table width="100%">
+                    <tr>
+                        <td align="left" valign="top" width="50%">
+                            <div class="video-compare-container">
+                                <video class="video" id="toaster_mesh" loop playsinline autoPlay muted src="video/toaster_mesh_NeuS_our.mp4" onplay="resizeAndPlay(this)"></video>
+                                <canvas height=0 class="videoMerge" id="toaster_meshMerge"></canvas>
+                            </div>
+                        </td>
+                        <td align="left" valign="top" width="50%">
+                            <div class="video-compare-container">
+                                <video class="video" id="toaster_normals" loop playsinline autoPlay muted src="video/helmet_meshes_NeuS_ours.mp4" onplay="resizeAndPlay(this)"></video>
+                                <canvas height=0 class="videoMerge" id="toaster_normalsMerge"></canvas>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
 
-                <div class="video-compare-container">
-                    <video class="video" id="toaster_normals" loop playsinline autoPlay muted src="video/toaster_normals_NeuS_ours.mp4" onplay="resizeAndPlay(this)"></video>
-                    <canvas height=0 class="videoMerge" id="toaster_normalsMerge"></canvas>
-                </div>
-
-                <div class="video-compare-container">
-                    <video class="video" id="helmet_mesh" loop playsinline autoPlay muted src="video/helmet_meshes_NeuS_ours.mp4" onplay="resizeAndPlay(this)"></video>
-                    <canvas height=0 class="videoMerge" id="helmet_meshMerge"></canvas>
-                </div>
-
-                <div class="video-compare-container">
-                    <video class="video" id="helmet_normals" loop playsinline autoPlay muted src="video/helmet-normals_NeuS_ours.mp4" onplay="resizeAndPlay(this)"></video>
-                    <canvas height=0 class="videoMerge" id="helmet_normalsMerge"></canvas>
-                </div>
+                <table width="100%">
+                    <tr>
+                        <td align="left" valign="top" width="50%">
+                            <div class="video-compare-container">
+                                <video class="video" id="helmet_mesh" loop playsinline autoPlay muted src="video/toaster_normals_NeuS_ours.mp4" onplay="resizeAndPlay(this)"></video>
+                                <canvas height=0 class="videoMerge" id="helmet_meshMerge"></canvas>
+                            </div>
+                        </td>
+                        <td align="left" valign="top" width="50%">
+                            <div class="video-compare-container">
+                                <video class="video" id="helmet_normals" loop playsinline autoPlay muted src="video/helmet-normals_NeuS_ours.mp4" onplay="resizeAndPlay(this)"></video>
+                                <canvas height=0 class="videoMerge" id="helmet_normalsMerge"></canvas>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
 
 			</div>
         </div>
