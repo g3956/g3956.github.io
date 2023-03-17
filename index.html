@@ -42,7 +42,7 @@
     <div class="container" id="header" style="text-align: center; margin: auto;">
         <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
             <h2 class="col-md-12 text-center" id="title">
-                <b>Ref-NeuS</b>: Ambiguity-Reduced <br> Neural Implicit Surface Learning for Multi-View Reconstruction with Reflection<br>
+                <b>Ref-NeuS</b>: Ambiguity-Reduced Neural Implicit Surface Learning <br> for Multi-View Reconstruction with Reflection<br>
             </h2>
         </div>
         <div class="row" id="author-row" style="margin:0 auto;">
@@ -96,7 +96,7 @@
                     <ul class="nav nav-pills nav-justified">
                         <li>
                             <a href="https://arxiv.org/abs/2112.03907">
-                            <img src="./img/paper_image.jpg" height="60px">
+                            <img src="./img/paper_image.png" height="60px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
                         </li> 
@@ -167,6 +167,25 @@
                         <video class="video" id="helmet_render" loop playsinline autoPlay muted src="video/helmet_render_NeuS_our.mp4" onplay="resizeAndPlay(this)"></video>
                         <canvas height=0 class="videoMerge" id="helmet_render"></canvas>
                 </div>
+
+                <div class="text-justify">
+                    We can also control the amounts of specular and diffuse colors, or change the diffuse color without affecting the specular reflections:
+                </div>
+                
+                <table width="100%">
+                    <tr>
+                        <td align="left" valign="top" width="50%">
+                            <video id="v2" width="100%" playsinline autoplay loop muted>
+                                <source src="video/car_color2.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                        <td align="left" valign="top" width="50%">
+                            <video id="v3" width="100%" playsinline autoplay loop muted>
+                                <source src="video/car_color3.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                    </tr>
+                </table>
 
             </div>
         </div>
